@@ -3,6 +3,8 @@ import NevBar from './Components/NevBar';
 import { useState } from 'react';
 import Home from './Components/Home';
 import About from './Components/About';
+import How from './Components/How';
+import Footer from './Components/footer';
 function App() {
   const [color, setColor] = useState("black");
   const [bgcolor, setBgColor] = useState("white");
@@ -16,6 +18,10 @@ function App() {
        <section id='aboutus'>
       <About color={color} bgcolor={bgcolor}  />
       </section>
+      <section id='how'>
+      <How color={color} bgcolor={bgcolor}  />
+      </section>
+      <Footer></Footer>
     </div>
   );
 }
