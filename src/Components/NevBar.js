@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import '../css/NevBar.css';
 export default function NevBar(props) {
     const[mode,setmode]=useState(0);
     function changemode(){
@@ -18,13 +19,13 @@ export default function NevBar(props) {
     }
   return (
     <div style={{color:props.color,background:props.bgColor}}>
-    <div style={{marginLeft:"20%",marginTop:"2%",color:props.color,background:props.bgColor}}>
-    <div style={{display:"flex",gap:"50px",fontFamily:"poppins",fontWeight:'500',paddingBottom:"20px"}}>
-    <div>Home</div>
-    <div>About Us</div>
-    <div>How?</div>
-    <div>Contect Us</div>
-    <div>ToogleMode</div>
+    <div style={{ marginLeft:"30px",marginTop:"2%",color:props.color,background:props.bgColor}}>
+    <div style={{display:"flex",gap:"30px",fontFamily:"poppins",fontWeight:'500',paddingBottom:"20px",fontSize:"20px"}}>
+    <div className='headerheading'>Home</div>
+    <div className='headerheading'>About Us</div>
+    <div className='headerheading'>How?</div>
+    <div className='headerheading'>Contect Us</div>
+    <div className='headerheading'>ToogleMode</div>
     <div class="form-check form-switch">
     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onChange={changemode}/>
     <label class="form-check-label" for="flexSwitchCheckDefault">Switch Mode</label>

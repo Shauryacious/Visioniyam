@@ -9,7 +9,7 @@ function App() {
   return (
     <div style={{ color: color, backgroundColor: bgcolor ,width:"100%",height:"100%",border:"solid",borderColor:bgcolor}}>
       <NevBar  setColor={setColor} setBgColor={setBgColor} color={color} bgcolor={bgcolor}/>
-      <Home></Home>
+      <Home color={color} bgcolor={bgcolor}></Home>
     </div>
   );
 }
