@@ -1,6 +1,5 @@
 import React from 'react';
 import { isWindows, isMacOs } from 'react-device-detect';
-import { FaWindows } from "react-icons/fa";
 
 const DownloadComponent = () => {
   return (
@@ -8,7 +7,7 @@ const DownloadComponent = () => {
       {isWindows && (
         <p>
           <a href="/download/windows">
-          <FaWindows/>Download for Windows
+          Download for Windows
           </a>
         </p>
       )}
