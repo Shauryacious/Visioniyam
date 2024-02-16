@@ -1,14 +1,21 @@
 import React from 'react';
 import { isWindows, isMacOs } from 'react-device-detect';
+import { FaWindows } from "react-icons/fa";
 
 const DownloadComponent = () => {
   return (
     <div>
       {isWindows && (
-        <p>Download for Windows <a href="/download/windows"></a></p>
+        <p>
+          <a href="/download/windows">
+          <FaWindows/>Download for Windows
+          </a>
+        </p>
       )}
       {isMacOs && (
-        <p>Download for macOS <a href="/download/macos"></a></p>
+        <p>
+          <a href="/download/macos">Download for macOS</a>
+        </p>
       )}
       {!isWindows && !isMacOs && (
         <p>Sorry, your operating system is not supported for download.</p>
