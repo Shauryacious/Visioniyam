@@ -1,6 +1,6 @@
 import React from 'react';
 import eyeImage from '../images/eye-svgrepo-com.svg';
-
+import DownloadComponent from './Download-Component';
 export default function Home(props) {
   return (
     <>
@@ -11,7 +11,7 @@ export default function Home(props) {
       </div>
       <div><img src={eyeImage} alt="Eye Cursor" style={{position:"relative",top:"-120px",left:"230px",width:"50%"}} /></div>
     </div>
-    <div><button type="button" class="btn btn-primary" style={{color:props.color,background:props.bgColor,position:'relative',top:"-200px",left:"15%"}}>Download software</button></div>
+    <div><button type="button" class="btn btn-primary" style={{color:props.color,background:props.bgColor,position:'relative',top:"-200px",left:"15%"}}><DownloadComponent></DownloadComponent></button></div>
     </>
   );
 }

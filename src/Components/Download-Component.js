@@ -5,10 +5,10 @@ const DownloadComponent = () => {
   return (
     <div>
       {isWindows && (
-        <p>Download for Windows: <a href="/download/windows">Click here</a></p>
+        <p>Download for Windows <a href="/download/windows"></a></p>
       )}
       {isMacOs && (
-        <p>Download for macOS: <a href="/download/macos">Click here</a></p>
+        <p>Download for macOS <a href="/download/macos"></a></p>
       )}
       {!isWindows && !isMacOs && (
         <p>Sorry, your operating system is not supported for download.</p>
