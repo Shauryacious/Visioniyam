@@ -4,7 +4,7 @@ import '../css/NevBar.css';
 export default function NevBar(props) {
     const[mode,setmode]=useState(0);
     function changemode(){
-        if(mode%2==0){
+        if(mode%2 === 0){
             props.setColor("white");
             props.setBgColor("black");
             console.log("mode1")
