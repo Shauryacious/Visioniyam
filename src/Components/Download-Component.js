@@ -7,13 +7,16 @@ const DownloadComponent = () => {
       {isWindows && (
         <p>
           <a href="/download/windows">
+          <i class="fa-brands fa-windows" style={{paddingRight:"20px"}}></i>
           Download for Windows
           </a>
         </p>
       )}
       {isMacOs && (
         <p>
-          <a href="/download/macos">Download for macOS</a>
+          <a href="/download/macos">
+          <i class="fa-brands fa-apple" style={{paddingRight:"20px"}}></i>
+            Download for macOS</a>
         </p>
       )}
       {!isWindows && !isMacOs && (
