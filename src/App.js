@@ -1,8 +1,10 @@
 import './App.css';
-
+import NevBar from './Components/NevBar';
 function App() {
   return (
-    <div>Radhe Radhe</div>
+    <div>
+    <NevBar></NevBar>
+    </div>
   );
 }
 
