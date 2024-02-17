@@ -6,7 +6,7 @@ const DownloadComponent = () => {
     <div>
       {isWindows && (
         <p>
-          <a href="/download/windows">
+          <a href="https://drive.usercontent.google.com/download?id=1xe1dyDM7b1BhrZl5JP0jNab-MAQ7ezI0&export=download&authuser=0" target='_blank'>
           <i class="fa-brands fa-windows" style={{paddingRight:"20px"}}></i>
           Download for Windows
           </a>
@@ -14,7 +14,7 @@ const DownloadComponent = () => {
       )}
       {isMacOs && (
         <p>
-          <a href="/download/macos">
+          <a href="https://drive.usercontent.google.com/download?id=1xe1dyDM7b1BhrZl5JP0jNab-MAQ7ezI0&export=download&authuser=0" target='_blank'>
           <i class="fa-brands fa-apple" style={{paddingRight:"20px"}}></i>
             Download for macOS</a>
         </p>

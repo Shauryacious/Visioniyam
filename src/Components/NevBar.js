@@ -59,13 +59,13 @@ export default function NevBar(props) {
          <a href='#'><div className='headerheading' onClick={changehomeState} style={{ textDecoration: `${home}`,paddingTop:'40px'}}>Home</div></a> 
          <a href='#aboutus'> <div className='headerheading'  onClick={changeaboutus} style={{ textDecoration: `${aboutus}`,paddingTop:'40px'}} >About Us</div></a>
          <a href='#how'><div className='headerheading' onClick={changehowState} style={{ textDecoration: `${how}`,paddingTop:'40px' }}>How?</div></a> 
-          <a href='#contect'><div className='headerheading' onClick={changecontectState} style={{ textDecoration: `${contect}`,paddingTop:'40px' }}>Contact Us</div></a>
+          <a href='#readdocs'><div className='headerheading' onClick={changecontectState} style={{ textDecoration: `${contect}`,paddingTop:'40px' }}>Read Docs</div></a>
           </div>
           <div className="form-check form-switch" style={{position:"absolute",left:"67%",top:"38px"}}>
             <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onChange={changeMode}/>
           </div>
-          <button type="button" className="btn btn-primary nevebarbutton" style={{ color: props.color, background: props.bgColor, position: "absolute", right: "2%", top: "30px" }}>Login</button>
-          <button type="button" className="btn btn-primary nevebarbutton" style={{ color: props.color, background: props.bgColor, position: "absolute", right: "8%", top: "30px" }}>SignIn</button>
+          {/* <button type="button" className="btn btn-primary nevebarbutton" style={{ color: props.color, background: props.bgColor, position: "absolute", right: "2%", top: "30px" }}>Login</button>
+          <button type="button" className="btn btn-primary nevebarbutton" style={{ color: props.color, background: props.bgColor, position: "absolute", right: "8%", top: "30px" }}>SignIn</button> */}
       </div>
     </div>
   );
