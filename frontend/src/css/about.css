@@ -1,5 +1,5 @@
 .aboutbox{
-    width:300px;
+    width:325px;
     border-radius: 10px;
     height:"200px";
     box-shadow: 1px 1px 5px rgb(94, 94, 94);
@@ -13,7 +13,7 @@
    font-size: 15px;
 }
 .boxdescription{
-    padding:5px;
+    padding:10px;
     font-size: 13px;
     font-weight: 700px;
     font-family: poppins;

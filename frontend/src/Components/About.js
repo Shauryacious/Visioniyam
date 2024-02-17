@@ -9,7 +9,7 @@ export default function About() {
     <div>
       <div style={{textAlign:"center", fontFamily:"poppins",fontSize:"25px",fontWeight:"900"}}>About</div>
       <div style={{display:"flex",justifyContent:"center",marginTop:"25px",marginBottom:"50px"}}>
-      <div style={{display:"flex",gap:"10%"}}>
+      <div style={{display:"flex",gap:"15%"}}>
         <div className='aboutbox'>
             <div className='boxheading'>Use Your Mouse Without Hands</div>
             <div style={{display:"flex",justifyContent:"center",paddingTop:"30px"}}><Lottie animationData={about1} style={{width:"200px"}}></Lottie></div>
