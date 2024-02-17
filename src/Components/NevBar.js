@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../css/NevBar.css';
+import img from '../images/first.png';
 export default function NevBar(props) {
   const [mode, setMode] = useState(0);
   const [home, setHome] = useState("");
@@ -50,17 +51,21 @@ export default function NevBar(props) {
   return (
     <div style={{ color: props.color, background: props.bgColor }}>
       <div style={{ marginLeft: "50px", marginTop: "2%", color: props.color, background: props.bgColor }}>
-        <div style={{ display: "flex", gap: "50px", fontFamily: "poppins", fontWeight: '500', paddingBottom: "20px", fontSize: "15px" }}>
-         <a href='#'><div className='headerheading' onClick={changehomeState} style={{ textDecoration: `${home}`}}>Home</div></a> 
-         <a href='#aboutus'> <div className='headerheading'  onClick={changeaboutus} style={{ textDecoration: `${aboutus}`}} >About Us</div></a>
-         <a href='#how'><div className='headerheading' onClick={changehowState} style={{ textDecoration: `${how}` }}>How?</div></a> 
-          <a href='#contect'><div className='headerheading' onClick={changecontectState} style={{ textDecoration: `${contect}` }}>Contact Us</div></a>
-          <div className="form-check form-switch">
-            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onChange={changeMode} />
-            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Switch Mode</label>
-          </div>
-          <button type="button" className="btn btn-primary" style={{ color: props.color, background: props.bgColor, position: "absolute", right: "8%", top: "20px" }}>Download</button>
+        <div style={{display:'flex'}}>
+          <img src={img} style={{width:"100px",top:"-15px",left:"10px",position:'relative'}}></img>
+          <div style={{fontSize:'20px',fontFamily:"poppins",fontWeight:"400px",paddingTop:"20px",position:"relative",left:"15px",top:"-12px"}}>Visioniyam</div>
         </div>
+        <div style={{ display: "flex", gap: "40px", fontFamily: "poppins", fontWeight: '100',position:'absolute',left:"35%",top:"0px", fontSize: "17px" }}>
+         <a href='#'><div className='headerheading' onClick={changehomeState} style={{ textDecoration: `${home}`,paddingTop:'40px'}}>Home</div></a> 
+         <a href='#aboutus'> <div className='headerheading'  onClick={changeaboutus} style={{ textDecoration: `${aboutus}`,paddingTop:'40px'}} >About Us</div></a>
+         <a href='#how'><div className='headerheading' onClick={changehowState} style={{ textDecoration: `${how}`,paddingTop:'40px' }}>How?</div></a> 
+          <a href='#contect'><div className='headerheading' onClick={changecontectState} style={{ textDecoration: `${contect}`,paddingTop:'40px' }}>Contact Us</div></a>
+          </div>
+          <div className="form-check form-switch" style={{position:"absolute",left:"67%",top:"38px"}}>
+            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onChange={changeMode}/>
+          </div>
+          <button type="button" className="btn btn-primary nevebarbutton" style={{ color: props.color, background: props.bgColor, position: "absolute", right: "2%", top: "30px" }}>Login</button>
+          <button type="button" className="btn btn-primary nevebarbutton" style={{ color: props.color, background: props.bgColor, position: "absolute", right: "8%", top: "30px" }}>SignIn</button>
       </div>
     </div>
   );

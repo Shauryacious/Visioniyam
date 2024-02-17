@@ -7,17 +7,17 @@ export default function Home(props) {
   return (
     <>
       <div style={{ paddingTop: "120px", display: "flex", paddingBottom: '10px',gap:"300px" }}>
-        <div style={{ position: "relative", top: "-20px" }}>
-          <div style={{ position: "relative", left: "150px", fontFamily: "poppins", fontWeight: "700", fontSize: '40px' }}>Control With Eye</div>
-          <div style={{ width: '500px', position: "relative", left: "150px", fontFamily: "poppins", fontWeight: "400", fontSize: "15px" }}>Navigate effortlessly with our groundbreaking program: control your mouse with just a glance.</div>
+        <div style={{ position: "relative", top: "20px" }}>
+          <div style={{ position: "relative", left: "100px", fontFamily: "poppins", fontWeight: "700", fontSize: '50px' }}>Control With Eye</div>
+          <div style={{ width: '500px', position: "relative", left: "100px",color:`${props.color==='black'?'gray':'white'}`, fontFamily: "poppins", fontWeight: "400", fontSize: "16px" }}>Visionary is a free program that enables you to control the mouse pointer on your computer screen just by moving your head.</div>
         </div>
         <div>
-          <Lottie animationData={data} style={{width:"300px",position:'relative',top:"-80px"}}></Lottie>
+          <Lottie animationData={data} style={{width:"400px",position:'relative',top:"-80px"}}></Lottie>
         </div>
       </div>
-      <div style={{ position: 'relative', top: "-150px", left: "15%" }}>
-        <button type="button" class="btn btn-primary" style={{ color: props.color, background: props.bgColor }}>
-          <DownloadComponent />
+      <div style={{ position: 'relative', top: "-225px", left: "15%" }}>
+        <button type="button" class="btn btn-primary" style={{ color: props.color, background: props.bgColor,position:"relative",top:"40px",borderRadius:'30px',backgroundColor:"rgb(0, 153, 180) " }}>
+          <DownloadComponent/>
         </button>
       </div>
     </>
